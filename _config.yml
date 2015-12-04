@@ -11,7 +11,7 @@ author_gravatar:    2b38b1b0e7e08b69379bd61582adf0c8 # Gravatar md5 hash
 twitter_username:   HeiswayiNrird
 
 # Site Settings
-baseurl:            /cyanzhong.github.io # Base URL must end WITHOUT a slash, default: ""
+baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
 permalink:          /:title # Post permalink
 timezone:           Asia/Kuala_Lumpur # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
