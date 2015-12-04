@@ -2,10 +2,28 @@
 title: About
 ---
 
-Hello.
-
-The main purpose of this theme is to be as simple as it could be, so you can focus on writing your stuffs. This is your About page. You may describe about yourself here; who you are, what are you currently doing, share some of your projects, your social links and how people can contact you, etc.
-
-**Just write thing that matters..**
-
-Enjoy!
+```
+{
+  "name": "Cyan",
+  "title": "iOS Developer",
+  "skills": [
+    "Objective-C",
+    "Swift",
+    "Java"
+  ],
+  "contact": {
+    "website": "ioszen.com",
+    "email": "log.e@qq.com",
+    "wechat": "495190096"
+  },
+  "sns": {
+    "github": "cyanzhong",
+    "zhihu": "http://www.zhihu.com/people/ios_dev",
+    "weibo": "weibo.com/0x00eeee"
+  },
+  "work": [
+    "Tencent",
+    "Alibaba"
+  ]
+}
+```
