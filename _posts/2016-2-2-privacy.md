@@ -2,12 +2,12 @@
 title: Pin
 ---
 
-# Privacy
-Please turn on **"Allow Full Access"** for custom keyboard, otherwise we cannot access the **clipboard**. we **do not** report **any information** about the content you stored in Pin.
+# 隐私政策
+请打开 Pin 键盘上面的 **“允许完全访问”**，否则我们将无法访问到**剪贴板**，这样的话数据也将无法刷新。我们**不会**将你在 Pin 里面存储的**任何内容**上传到我们自己的服务器。
 
-Although Pin requires **network** for better user experience, our custom keyboard **does not** collect any of your input.
+虽然 Pin 键盘需要**网络**来获得更好的用户体验，但我们**不会**收集你输入的任何内容。
 
-Pin syncing contents between multiple devices through **iCloud private database**, we **do not** store any of your data anywhere else, so we cannot steal your contents. **Nobody** knows what you stored in Pin except yourself.
+Pin 使用 **iCloud 私有数据库**来在多台设备之间做数据同步，这个数据库会将用户的数据基于 iCloud 账号进行隔离，我们**不会**将你的数据存储到任何别的地方。除你之外**没有人**知道你在 Pin 里面存储了什么。
 
-# Support
-For support, find us on Weibo at **[@StackOverflowError](http://weibo.com/0x00eeee)** or email to **[log.e@qq.com](mailto:log.e@qq.com)**
+# 技术支持 
+你可以在微博上面 at 我们 **[@StackOverflowError](http://weibo.com/0x00eeee)**，也可以发邮件到 **[log.e@qq.com](mailto:log.e@qq.com)**。
