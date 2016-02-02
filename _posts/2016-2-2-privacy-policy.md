@@ -10,4 +10,4 @@ Although  Pin requires network for better user experience, our custom keyboard *
 Pin syncing contents between multiple devices through **iCloud private account**, so we cannot view your clips. Nobody knows what you stored in Pin except yourself.
 
 # Support
-For support, find me on Weibo at [@StackOverflowError](http://weibo.com/0x00eeee) or email to [log.e@qq.com](log.e@qq.com)
+For support, find me on Weibo at [@StackOverflowError](http://weibo.com/0x00eeee) or email to [log.e@qq.com](mailto:log.e@qq.com)
