@@ -1,5 +1,5 @@
 ---
-title: Pin
+title: Pin 隐私政策
 ---
 
 # 隐私政策

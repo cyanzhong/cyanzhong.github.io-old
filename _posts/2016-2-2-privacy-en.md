@@ -1,5 +1,5 @@
 ---
-title: Pin
+title: Pin Privacy
 ---
 
 # Privacy
