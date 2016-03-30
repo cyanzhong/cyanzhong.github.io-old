@@ -1,0 +1,43 @@
+define('@weex-component/bd6b68ff159b06feb7314448bce94ed1', function(require, exports, module) {
+
+    ;
+    module.exports = {
+        data: function() {
+            return {
+                context: "{{context}}"
+            }
+        }
+    }
+
+
+    ;
+    module.exports.style = {
+        "webnode": {
+            "height": 1222,
+            "flex": 1
+        }
+    }
+
+    ;
+    module.exports.template = {
+        "type": "container",
+        "children": [{
+            "type": "webnode",
+            "attr": {
+                "url": function() {
+                    return this.context.url
+                }
+            },
+            "classList": [
+                "webnode"
+            ]
+        }]
+    }
+
+    ;
+})
+
+// require module
+bootstrap('@weex-component/bd6b68ff159b06feb7314448bce94ed1', {
+    "transformerVersion": "0.1.5"
+})

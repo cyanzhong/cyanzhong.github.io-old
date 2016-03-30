@@ -1,0 +1,153 @@
+define('@weex-component/01aac62744bf1a74aeca4c43bd3f4ba0', function(require, exports, module) {
+
+    ;
+    module.exports = {
+        data: function() {
+            return {
+                apis: {
+                    baseURL: "http://news-at.zhihu.com/api/4/news/",
+                    latest: "latest",
+                },
+                list: []
+            }
+        },
+        methods: {
+            log: function(text) {
+                this.$call("event", "log", text);
+            },
+            http: function(method, url, callback) {
+                this.$sendHttp({
+                    method: method,
+                    url: url
+                }, function(resp) {
+                    var json = JSON.parse(resp);
+                    callback(json);
+                });
+            },
+            get: function(url, callback) {
+                this.http("GET", url, callback);
+            },
+            post: function(url, callback) {
+                this.http("POST", url, callback);
+            },
+            api: function(path) {
+                return this.apis.baseURL + path;
+            },
+            ready: function() {
+                var list = [];
+                var context = this;
+                var api = this.api(this.apis.latest);
+                this.get(api, function(json) {
+                    var stories = json.stories;
+                    for (var i = 0; i < stories.length; ++i) {
+                        var story = stories[i];
+                        list[i] = {
+                            src: story.images[0],
+                            title: story.title,
+                            news_id: story.id
+                        };
+                    }
+                    context.list = list;
+                });
+            },
+            onclick: function(e) {
+                var news_id = e.target.attr["news_id"];
+                var context = this;
+                var api = this.api(news_id);
+                this.get(api, function(json) {
+                    var params = {
+                        url: "http://ioszen.com/detail.weex",
+                        context: {
+                            url: json.share_url,
+                            title: json.title
+                        }
+                    };
+                    context.$call("event", "push", params);
+                });
+            }
+        }
+    }
+
+
+    ;
+    module.exports.style = {
+        "cell": {
+            "flexDirection": "row",
+            "margin": 10
+        },
+        "thumb": {
+            "width": 128,
+            "height": 128
+        },
+        "title": {
+            "flex": 1,
+            "fontSize": 32,
+            "fontWeight": "bold",
+            "paddingTop": 32,
+            "paddingLeft": 10,
+            "paddingRight": 10
+        },
+        "separator": {
+            "backgroundColor": "#dddddd",
+            "height": 1
+        }
+    }
+
+    ;
+    module.exports.template = {
+        "type": "scroller",
+        "children": [{
+            "type": "container",
+            "repeat": function() {
+                return this.list
+            },
+            "attr": {
+                "news_id": function() {
+                    return this.news_id
+                }
+            },
+            "events": {
+                "click": "onclick"
+            },
+            "children": [{
+                "type": "container",
+                "classList": [
+                    "cell"
+                ],
+                "children": [{
+                    "type": "image",
+                    "classList": [
+                        "thumb"
+                    ],
+                    "attr": {
+                        "src": function() {
+                            return this.src
+                        }
+                    }
+                }, {
+                    "type": "text",
+                    "classList": [
+                        "title"
+                    ],
+                    "attr": {
+                        "value": function() {
+                            return this.title
+                        }
+                    }
+                }]
+            }, {
+                "type": "text",
+                "classList": [
+                    "separator"
+                ]
+            }]
+        }]
+    }
+
+    ;
+})
+
+// require module
+bootstrap('@weex-component/01aac62744bf1a74aeca4c43bd3f4ba0', {
+    "transformerVersion": "0.1.5"
+})
