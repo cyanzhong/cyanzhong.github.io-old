@@ -1,0 +1,182 @@
+[
+  {
+    "type": "Web Search",
+    "exts": [
+      "Google",
+      "Bing",
+      "Baidu",
+      "DuckDuckGo",
+      "StartPage",
+      "Yandex",
+      "Naver"
+    ]
+  },
+  {
+    "type": "Other Search",
+    "exts": [
+      "Google Images",
+      "Bing Images",
+      "Baidu Images",
+      "Flickr",
+      "Wikipedia",
+      "Baidu Baike",
+      "Google Maps",
+      "Google Scholar",
+      "Amazon",
+      "Ebay",
+      "Etsy",
+      "IMDb",
+      "YouTube",
+      "Youku",
+      "Tudou",
+      "Sohu",
+      "DOI",
+      "PubMed",
+      "WorldCat",
+      "Urban Dictionary",
+      "Wolfram Alpha",
+      "Taobao",
+      "JD"
+    ]
+  },
+  {
+    "type": "Translation",
+    "exts": [
+      "Google Translate",
+      "Bing Translate",
+      "Baidu Translate",
+      "Youdao Translate",
+      "Eudic"
+    ]
+  },
+  {
+    "type": "Dictionaries",
+    "exts": [
+      "Dictionary",
+      "Youdao Dict",
+      "Bing Dict",
+      "Baidu Dict",
+      "Antidote",
+      "Eudic",
+      "Lingvo"
+    ]
+  },
+  {
+    "type": "Notes Apps",
+    "exts": [
+      "Notes",
+      "Stickies",
+      "Notational Velocity",
+      "nvALT",
+      "Sticky Notifications",
+      "Together",
+      "Yojimbo",
+      "Day One",
+      "Notefile",
+      "NoteAway",
+      "Simplenote"
+    ]
+  },
+  {
+    "type": "To-Do Apps",
+    "exts": [
+      "Reminders",
+      "2Do",
+      "Doit.im",
+      "TaskPaper",
+      "Todo",
+      "Due",
+      "Wunderlist"
+    ]
+  },
+  {
+    "type": "Other Apps",
+    "exts": [
+      "TextEdit",
+      "Email",
+      "Maps",
+      "FaceTime",
+      "Contacts",
+      "Leap",
+      "HoudahSpot",
+      "Tembo",
+      "Alfred",
+      "LaunchBar",
+      "TextExpander",
+      "Typinator",
+      "Parcel",
+      "Deliveries",
+      "Dropshelf",
+      "Unclutter"
+    ]
+  },
+  {
+    "type": "URLs",
+    "exts": [
+      "Pocket",
+      "Leech",
+      "Open In Safari",
+      "Open In Chrome",
+      "Open In Firefox",
+      "Open In Opera",
+      "Get IP",
+      "Reading List"
+    ]
+  },
+  {
+    "type": "Social Networking",
+    "exts": [
+      "Twitter",
+      "Buffer"
+    ]
+  },
+  {
+    "type": "Music",
+    "exts": [
+      "Spotify",
+      "Rdio",
+      "Discogs"
+    ]
+  },
+  {
+    "type": "Phone Numbers",
+    "exts": [
+      "Call",
+      "Skype",
+      "Dialectic",
+      "Phone Amego"
+    ]
+  },
+  {
+    "type": "Text Utilities",
+    "exts": [
+      "UpperCase",
+      "LowerCase",
+      "Character Count",
+      "Word Count",
+      "Say",
+      "Full Width",
+      "Half Width"
+    ]
+  },
+  {
+    "type": "Developers",
+    "exts": [
+      "Dash",
+      "Run Command",
+      "BBEdit",
+      "URL Encode",
+      "URL Decode",
+      "HTML Encode",
+      "HTML Decode",
+      "Base64 Encode",
+      "Base64 Decode"
+    ]
+  },
+  {
+    "type": "Other Tools",
+    "exts": [
+      "Calculate"
+    ]
+  }
+]
